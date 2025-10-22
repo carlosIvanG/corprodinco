@@ -336,18 +336,6 @@ footer {
 
   }
 
-  .sectionHijo1_1 {
-    width: 50%;
-  }
-
-  .sectionHijo1_2 {
-    width: 100%;
-  }
-
-  .sectionHijo1_2>img {
-    width: 87%;
-  }
-
   .aliados {
     background-color: #e3d6e0;
     justify-content: space-around;
@@ -430,5 +418,20 @@ footer {
   /*footer*/
   footer {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .sectionHijo1_1 {
+    width: 50%;
+  }
+
+  .sectionHijo1_2 {
+    width: 100%;
+  }
+
+  .sectionHijo1_2>img {
+    width: 100%;
   }
 }
