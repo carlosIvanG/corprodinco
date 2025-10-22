@@ -63,9 +63,7 @@ li>a:hover {
 .sectionHijo1_2 {
   display: flex;
   justify-content: center;
-  /* Centrado horizontal */
   align-items: center;
-  /* Centrado vertical */
   text-align: center;
 }
 
@@ -117,9 +115,7 @@ li>a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* Centrado horizontal */
   align-items: center;
-  /* Centrado vertical */
 }
 
 .sectionHijo2_2_2>img {
@@ -168,7 +164,7 @@ li>a:hover {
 }
 
 .sectionHijo3_2_1 {
-  width: 450px;
+  width: 100%;
   padding-left: 10px;
   border-radius: 15px;
 
@@ -177,7 +173,7 @@ li>a:hover {
 .sectionHijo3_2_1>div {
   background-color: white;
   border-radius: 5px;
-  width: 400px;
+  width: 90%;
   height: 5px;
 }
 
@@ -212,14 +208,14 @@ li>a:hover {
 }
 
 .sectionHijo4_2>section {
-  width: 250px;
-  height: 355px;
+  width: 20%;
+  height: 70%;
   padding-left: 10px;
-  background-color: yellow;
-  box-shadow: inset 0 13px 0 0 #08B;
 }
 
 .sectionHijo4_2 img {
+  box-shadow: inset 0 13px 0 0 #08B;
+  background-color: yellow;
   width: 90%;
   padding: 15px 5px 15px 5px;
   object-fit: cover;
@@ -288,114 +284,128 @@ footer {
   }
 
   /*Encabezado*/
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-}
+  }
 
-nav>img {
-  width: 24%;
-  /*padding-left: 12px;*/
-}
-nav > ul, .menuInterno{
-  display: none;
-}
+  nav>img {
+    width: 24%;
+  }
 
-#menuExterno {
-  display: block;
-  text-align: center;
-}
-#menuExterno:hover > .menuInterno {
-  display: flex;
-  
-}
-.menuInterno > ul{
-  flex-direction: column;
-}
+  nav>ul,
+  .menuInterno {
+    display: none;
+  }
 
-li>a:hover {
-  font-size: 40px;
-}
+  #menuExterno {
+    display: block;
+    text-align: center;
+  }
 
-/*Seccion1*/
-#sectionHijo1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  #menuExterno:hover>.menuInterno {
+    display: flex;
 
-.aliados {
-  background-color: #e3d6e0;
-  justify-content: space-around;
-  display: flex;
-}
+  }
 
-.aliados>img {
-  width: 24%;
-}
+  .menuInterno>ul {
+    flex-direction: column;
+  }
 
-/*Seccion3*/
-#sectionHijo3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*margin-top: 20px;
-  margin-bottom: 20px;
-  align-items: flex-end;*/
-}
+  li>a:hover {
+    font-size: 40px;
+  }
 
-.sectionHijo3_1 {
-  width: 100%;
-}
+  /*Seccion1*/
+  #sectionHijo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.sectionHijo3_1>h2 {
-  color: #E12F97;
-}
+  .aliados {
+    background-color: #e3d6e0;
+    justify-content: space-around;
+    display: flex;
+  }
 
-.sectionHijo3_2 {
-  border: 2px solid black;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .aliados>img {
+    width: 24%;
+  }
 
-.sectionHijo3_2>section {
-  background-color: #0C9903;
-  color: white;
-}
+  /*Seccion3*/
+  #sectionHijo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.sectionHijo3_2_1 {
-  width: 100%;
-  /*padding-left: 10px;
-  border-radius: 15px;*/
-}
+  .sectionHijo3_1 {
+    width: 100%;
+  }
 
-.sectionHijo3_2_1>div {
-  background-color: white;
-  border-radius: 5px;
-  width: 80%;
-  height: 5px;
-}
+  .sectionHijo3_1>h2 {
+    color: #E12F97;
+  }
 
-.boton {
-  width: 200px;
-  margin-top: 30px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 28
-  px;
-}
+  .sectionHijo3_2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.boton>a {
-  color: white;
-}
+  .sectionHijo3_2>section {
+    background-color: #0C9903;
+    color: white;
+  }
 
-.boton>a:hover {
-  color: black;
-}
+  .sectionHijo3_2_1 {
+    width: 100%;
+  }
 
+  .sectionHijo3_2_1>div {
+    background-color: white;
+    border-radius: 5px;
+    width: 80%;
+    height: 5px;
+  }
 
+  .boton {
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .boton>a {
+    color: white;
+  }
+
+  .boton>a:hover {
+    color: black;
+  }
+
+  /*seccion4*/
+
+  .sectionHijo4_2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+  }
+
+  .sectionHijo4_2>section {
+    width: 100px;
+    height: 155px;
+  }
+
+  /*footer*/
+  footer {
+    font-size: 13px;
+  }
 }
