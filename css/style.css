@@ -1,22 +1,36 @@
 /* Parametros Globales*/
-*{
+* {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
 }
-h2{
+
+h2 {
   text-align: center;
 }
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: black;
+}
+
 /*Encabezado*/
 nav {
   display: flex;
 }
-nav > img{
+
+nav>img {
   width: 12%;
   padding-left: 12px;
 }
+
 nav ul {
   width: 100%;
   display: flex;
@@ -26,121 +40,144 @@ nav ul {
   font-size: 24px;
 }
 
+li>a:hover {
+  font-size: 48px;
+}
+
 /*Seccion1*/
-#sectionPadre{
-  /*border: 2px solid black;*/
+#sectionPadre {
   display: flex;
   flex-direction: column;
 }
-.sectionHijo1{
+
+#sectionHijo1 {
   display: flex;
   flex-direction: row;
 }
-.sectionHijo1_1, .sectionHijo1_2{
+
+.sectionHijo1_1,
+.sectionHijo1_2 {
   display: flex;
-  /*border: 2px solid red;*/
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;    /* Centrado vertical */
+  justify-content: center;
+  /* Centrado horizontal */
+  align-items: center;
+  /* Centrado vertical */
   text-align: center;
 }
 
-.sectionHijo1_1{
-  width: 60%;
+.sectionHijo1_1 {
+  width: 50%;
 }
 
-.sectionHijo1_2{
-  width: 40%;
+.sectionHijo1_2 {
+  width: 50%;
 }
 
-.sectionHijo1_2 > img{
+.sectionHijo1_2>img {
   width: 75%;
 }
 
 .bienvendido {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: bold;
 }
+
 .aliados {
   background-color: #e3d6e0;
   justify-content: space-around;
   display: flex;
 }
-.aliados > img{
+
+.aliados>img {
   width: 12%;
 }
 
 /*Seccion2*/
-.sectionHijo2{
+#sectionHijo2 {
   display: flex;
   flex-direction: column;
 }
-.sectionHijo2_1, .sectionHijo2_2 > h2{
+
+.sectionHijo2_1>p {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.sectionHijo2_1,
+.sectionHijo2_2>h2 {
   text-align: center;
 }
-.sectionHijo2_2_2{
+
+.sectionHijo2_2_2 {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;    /* Centrado vertical */
+  justify-content: center;
+  /* Centrado horizontal */
+  align-items: center;
+  /* Centrado vertical */
 }
-.sectionHijo2_2_2 > img{
+
+.sectionHijo2_2_2>img {
   width: 40%;
 }
-.sectionHijo2_2_2 > p{
+
+.sectionHijo2_2_2>p {
   padding-left: 10%;
 }
 
-.separador{
+.separador {
   width: 100%;
   height: 35px;
   background-color: #e3d6e0;
 }
+
 /*Seccion3*/
-.sectionHijo3{
+#sectionHijo3 {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   margin-bottom: 20px;
   align-items: flex-end;
 }
-.sectionHijo3_1{
+
+.sectionHijo3_1 {
   width: 60%;
 }
 
-.sectionHijo3_1 > h2{
+.sectionHijo3_1>h2 {
   color: #E12F97;
 }
 
-.sectionHijo3_2{
+.sectionHijo3_2 {
   width: 40%;
 }
 
-.sectionHijo3_2 > section{
+.sectionHijo3_2>section {
   background-color: #0C9903;
   color: white;
 }
 
-.sectionHijo3_2{
+.sectionHijo3_2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sectionHijo3_2_1{
+.sectionHijo3_2_1 {
   width: 450px;
   padding-left: 10px;
   border-radius: 15px;
 
 }
 
-.sectionHijo3_2_1 > div{
+.sectionHijo3_2_1>div {
   background-color: white;
   border-radius: 5px;
   width: 400px;
   height: 5px;
 }
 
-.boton{
+.boton {
   width: 200px;
   margin-top: 30px;
   border-radius: 15px;
@@ -148,21 +185,93 @@ nav ul {
   font-size: 24px;
 }
 
+.boton>a {
+  color: white;
+}
+
+.boton>a:hover {
+  color: black;
+}
+
 /*seccion4*/
-.sectionHijo4{
+#sectionHijo4 {
   background-color: #e3d6e0;
   text-align: center;
 }
-.sectionHijo4_2{
+
+.sectionHijo4_2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
+  height: 500px;
 }
 
-.sectionHijo4_2 > section{
-  width: 100px;
-  height: 55px;
+.sectionHijo4_2>section {
+  width: 250px;
+  height: 355px;
   padding-left: 10px;
   background-color: yellow;
   box-shadow: inset 0 13px 0 0 #08B;
+}
+
+.sectionHijo4_2 img {
+  width: 90%;
+  padding: 15px 5px 15px 5px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.sectionHijo4_2 img:hover {
+  transform: scale(1.05);
+}
+
+/* ==== Estilos del visor ==== */
+.visor {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.visor img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #fff;
+}
+
+/* Se muestra cuando el ID coincide con el hash (#imgX) */
+.visor:target {
+  display: flex;
+}
+
+/* Botón cerrar */
+.cerrar {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cerrar:hover {
+  color: #ff6666;
+}
+
+
+/*footer*/
+footer {
+  background-color: black;
+  color: white;
 }
