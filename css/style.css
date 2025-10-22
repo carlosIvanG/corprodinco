@@ -199,7 +199,7 @@ li>a:hover {
   text-align: center;
 }
 
-.sectionHijo4_1 > h2{
+.sectionHijo4_1>h2 {
   text-decoration-line: underline overline;
 }
 
@@ -292,18 +292,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   nav>img {
     width: 24%;
   }
-  
+
   nav>ul,
   .menuInterno {
     display: none;
   }
-  
+
   #menuExterno {
     display: block;
     text-align: center;
@@ -311,15 +310,15 @@ footer {
     padding: 2px 12px 2px 12px;
   }
 
-  .menuInterno{
+  .menuInterno {
     padding-right: 20px;
   }
-  
+
   #menuExterno:hover>.menuInterno {
     display: flex;
-    
+
   }
-  
+
   .menuInterno>ul {
     font-size: 20px;
     flex-direction: column;
@@ -334,6 +333,21 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+  }
+
+  .sectionHijo1_1 {
+    border: 2px solid black;
+    width: 50%;
+  }
+
+  .sectionHijo1_2 {
+    border: 2px solid black;
+    width: 100%;
+  }
+
+  .sectionHijo1_2>img {
+    width: 87%;
   }
 
   .aliados {
