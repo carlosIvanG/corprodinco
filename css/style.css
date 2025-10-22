@@ -199,6 +199,10 @@ li>a:hover {
   text-align: center;
 }
 
+.sectionHijo4_1 > h2{
+  text-decoration-line: underline overline;
+}
+
 .sectionHijo4_2 {
   display: flex;
   flex-direction: row;
@@ -294,23 +298,30 @@ footer {
   nav>img {
     width: 24%;
   }
-
+  
   nav>ul,
   .menuInterno {
     display: none;
   }
-
+  
   #menuExterno {
     display: block;
     text-align: center;
+    border-style: outset;
+    padding: 2px 12px 2px 12px;
   }
 
+  .menuInterno{
+    padding-right: 20px;
+  }
+  
   #menuExterno:hover>.menuInterno {
     display: flex;
-
+    
   }
-
+  
   .menuInterno>ul {
+    font-size: 20px;
     flex-direction: column;
   }
 
