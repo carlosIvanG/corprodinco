@@ -1,0 +1,43 @@
+*{
+    color: white;
+}
+header {
+    background-image: url("/img/fondoInicio.jpg");
+    background-size: cover;
+    /* Para que cubra todo el contenedor */
+    background-repeat: no-repeat;
+    /* Para que no se repita la imagen */
+    background-attachment: fixed;
+    /* Para que la imagen sea fija mientras se desplaza la página */
+    background-position: center;
+    /* Para centrar la imagen */
+    height: 640px;
+
+}
+#logoMenu{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.logo{
+    width: 20%;
+    height: 500px;
+    border: 2px solid rgb(68, 0, 255);
+}
+.menu{
+    width: 70%;
+    border: 2px solid rgb(0, 255, 128);
+}
+.logo > img{
+   width: 100%;
+   /*height: auto;*/
+}
+
+.menu > ul{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
