@@ -1,0 +1,456 @@
+/*--Estilo Global--*/
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*--Cabecera--*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/fondoInicio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logoMenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.logo {
+    width: 20%;
+    height: 250px;
+    margin: auto;
+}
+
+.menu {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+
+.logo>img {
+    width: 70%;
+}
+
+#bienvenida {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 300px 0px 300px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/*--seccion Informacion empresa--*/
+#seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.quienesSomos {
+    width: 50%;
+    height: auto;
+    padding: 0px 50px 0px 50px;
+    margin: 30px 25px 0px 25px;
+    border-image-source: linear-gradient(rgb(83, 35, 80), rgb(252, 251, 251));
+    border-image-slice: 1 0 0 1;
+    border-image-width: 0.25rem;
+    align-self: flex-start;
+    text-align: justify;
+}
+
+.objetivos {
+    width: 50%;
+    height: auto;
+    padding: 0px 50px 10px 50px;
+    margin: 0px 25px 30px 25px;
+    border-image-source: linear-gradient(rgb(252, 251, 251), rgb(83, 35, 80));
+    border-image-slice: 0 1 1 0;
+    border-image-width: 0.25rem;
+    align-self: flex-end;
+    text-align: justify;
+}
+
+/*--seccion inscripcion--*/
+#seccion2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* altura completa de la pantalla */
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0.4);
+    /* zoom 1.2x */
+    object-fit: cover;
+}
+
+/* Contenido encima del video */
+.overlay-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.requisitos {
+    width: 60%;
+}
+
+.modalidad {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.requisitos>h2 {
+    color: white;
+}
+
+.requisitos>ul {
+    list-style: none;
+    text-align: left;
+}
+
+.modalidad>article>ul {
+    border-top: 3px solid white;
+}
+
+.modalidad1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+}
+
+.btn_rgt {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    width: 50%;
+    margin: 5% 30% 0% 30%;
+}
+
+.btn_rgt>a {
+    font-size: large;
+}
+
+.btn_rgt>a:hover {
+    color: black;
+}
+
+.btn_rgt:hover {
+    background-color: rgb(252, 252, 249);
+}
+
+/*--seccion noticias--*/
+#seccion3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: 30px solid #E12F97;
+}
+
+#seccion3>h2 {
+    text-decoration-line: underline overline;
+}
+
+.sectionHijo4_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+}
+
+.sectionHijo4_2>section {
+    width: 20%;
+    height: 70%;
+    padding-left: 10px;
+}
+
+.sectionHijo4_2 img {
+    box-shadow: inset 0 13px 0 0 #08B;
+    background-color: #E12F97;
+    width: 90%;
+    padding: 15px 5px 15px 5px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.sectionHijo4_2 img:hover {
+    transform: scale(1.05);
+}
+
+/* ==== Estilos del visor ==== */
+.visor {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.visor img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #fff;
+}
+
+/* Se muestra cuando el ID coincide con el hash (#imgX) */
+.visor:target {
+    display: flex;
+}
+
+/* Botón cerrar */
+.cerrar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: #ff6666;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+}
+
+.convenio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.convenio>img {
+    width: 10%;
+}
+
+
+.social-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-menu a {
+  display: block;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-menu img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.social-menu a:hover {
+  transform: translateX(-6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 690px) {
+
+    /*Global*/
+    h2 {
+        text-align: center;
+        font-size: large;
+    }
+
+    /*cabecera*/
+    header {
+        height: 420px;
+    }
+
+    .logo {
+        margin: auto;
+        height: auto;
+    }
+
+    .menu {
+        font-size: large;
+        height: auto;
+    }
+
+    #bienvenida {
+        margin: 0px 150px 0px 150px;
+        font-size: large;
+    }
+
+    /*informacion de la empresa*/
+    .quienesSomos {
+        height: auto;
+    }
+
+    .objetivos {
+        height: auto;
+    }
+
+    /*--seccion inscripcion--*/
+    #seccion2 {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* altura completa de la pantalla */
+        overflow: hidden;
+    }
+
+    /* Video de fondo */
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        transform: translate(-50%, -50%) scale(0.4);
+        /* zoom 1.2x */
+        object-fit: cover;
+    }
+
+    /* Contenido encima del video */
+    .overlay-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .requisitos {
+        width: 100%;
+    }
+
+    .modalidad {
+        width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: large;
+    }
+
+    header {
+        height: 320px;
+    }
+
+    #logoMenu {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo>img {
+        width: 100%;
+    }
+
+    #bienvenida {
+        margin: 0px 30px 0px 30px;
+        font-size: small;
+    }
+
+    .sectionHijo4_2 {
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionHijo4_2>section {
+        width: 65%;
+        height: auto;
+    }
+
+    footer>h3 {
+        font-size: small;
+    }
+
+    .convenio>img {
+        width: 25%;
+    }
+}
