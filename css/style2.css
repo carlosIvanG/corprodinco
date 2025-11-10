@@ -20,7 +20,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 640px;
+    height: auto;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +71,7 @@ header {
 
 .quienesSomos {
     width: 50%;
-    height: 150px;
+    height: auto;
     padding: 0px 50px 0px 50px;
     margin: 30px 25px 0px 25px;
     border-image-source: linear-gradient(rgb(83, 35, 80), rgb(252, 251, 251));
@@ -83,7 +83,7 @@ header {
 
 .objetivos {
     width: 50%;
-    height: 150px;
+    height: auto;
     padding: 0px 50px 10px 50px;
     margin: 0px 25px 30px 25px;
     border-image-source: linear-gradient(rgb(252, 251, 251), rgb(83, 35, 80));
@@ -265,7 +265,7 @@ header {
 footer {
     background-color: black;
     width: 100%;
-    height: 150px;
+    height: auto;
     color: white;
     text-align: center;
 }
@@ -281,7 +281,50 @@ footer {
     width: 10%;
 }
 
-@media screen and (max-width: 655px) {
+
+.social-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-menu a {
+  display: block;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-menu img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.social-menu a:hover {
+  transform: translateX(-6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 690px) {
 
     /*Global*/
     h2 {
@@ -360,28 +403,26 @@ footer {
     }
 }
 
-@media screen and (max-width: 360px) {
-    /*--Cabecera--*/
-    header{
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid rgb(21, 255, 0);
-    }
-    #logoMenu {
-        width: 50%;
-        height: 20px;
-        border: 2px solid red;
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: large;
     }
 
-    .logo {
-        width: 40%;
+    header {
+        height: 320px;
+    }
+
+    #logoMenu {
+        width: 100%;
     }
 
     .menu {
-        visibility: hidden;
-        height: 0px;
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
     }
 
     .logo>img {
@@ -389,21 +430,27 @@ footer {
     }
 
     #bienvenida {
-        width: 50%;
-        height: 20px;
-        border: 2px solid red;
-        /*display: flex;
-        flex-wrap: wrap;*/
-        /*flex-direction: column;*/
-        /*align-items: center;
-        text-align: center;
-        font-size: large;*/
-    }
-    #bienvenida > p{
-        border:2px solid yellow;
-    }
-    #bienvenida > h1{
-        border:2px solid yellow;
+        margin: 0px 30px 0px 30px;
+        font-size: small;
     }
 
+    .sectionHijo4_2 {
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionHijo4_2>section {
+        width: 65%;
+        height: auto;
+    }
+
+    footer>h3 {
+        font-size: small;
+    }
+
+    .convenio>img {
+        width: 25%;
+    }
 }
